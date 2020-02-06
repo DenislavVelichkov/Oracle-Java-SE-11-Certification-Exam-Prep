@@ -3,7 +3,7 @@ import java.util.Deque;
 import java.util.Scanner;
 
 public class Pyramid {
- public static Deque<Integer> digits = new ArrayDeque<>();
+ private static Deque<Integer> digits = new ArrayDeque<>();
 
   public static void main(String[] args) {
     System.out.println("Please enter a number:");
