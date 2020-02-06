@@ -16,7 +16,7 @@ public class Inheritance {
 
     for (Amphibian amphibian : tadpoles) {
       CanSwim tadpole = amphibian;
-      }
+    }
 
   }
 }

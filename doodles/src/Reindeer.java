@@ -19,12 +19,12 @@ public class Reindeer extends Deer {
     System.out.print("Reindeer");
   }
 
-  public boolean hasHorns() {
-    return true;
-  }
-
   public static void main(String[] args) {
     Deer deer = new Reindeer(5);
     System.out.println("," + deer.hasHorns());
+  }
+
+  public boolean hasHorns() {
+    return true;
   }
 }
