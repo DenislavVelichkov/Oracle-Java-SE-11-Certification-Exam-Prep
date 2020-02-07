@@ -38,7 +38,7 @@ public class FindAllPathsInLabyrinth {
 
     if (isOnExit(row, col)) {
       printSolution();
-    } else if (isObstacle(row, col)) {
+    } else if (canMove(row, col)) {
 
 //      marks a start point
       labyrinth[row][col] = 'x';
@@ -65,7 +65,7 @@ public class FindAllPathsInLabyrinth {
     return labyrinth[row][col] == 'e';
   }
 
-  static boolean isObstacle(int row, int col) {
+  static boolean canMove(int row, int col) {
 //    already visited
     if (labyrinth[row][col] == 'x') {
       return false;
