@@ -30,16 +30,13 @@ public class FindAllPathsInLabyrinth {
   }
 
   static void solve(int row, int col, String direction) {
-    if (isOutsideOfTheLabyrinth(row, col)) {
-      return;
-    }
+    if (isOutsideOfTheLabyrinth(row, col)) { return; }
 
     path.add(direction);
 
     if (isOnExit(row, col)) {
       printSolution();
     } else if (canMove(row, col)) {
-
 //      marks a start point
       labyrinth[row][col] = 'x';
 
@@ -47,12 +44,9 @@ public class FindAllPathsInLabyrinth {
       solve(row - 1, col, "U");
       solve(row, col + 1, "R");
       solve(row + 1, col - 1, "L");
-
 //      unmark start point
-
       labyrinth[row][col] = '-';
     }
-
 //    remove last index
     path.remove(path.size() - 1);
   }
