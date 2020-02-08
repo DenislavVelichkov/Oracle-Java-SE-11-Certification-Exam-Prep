@@ -1,9 +1,11 @@
-public class PrimeNumber {
-  static int range = 100;
+public class FindPrimeNumber {
+  static int range = 10000000;
 
   public static void main(String[] args) {
+    System.out.println(2);
 
-    for (int i = 2; i <= range; i++) {
+    for (int i = 3; i <= range; i++) {
+
       if (isPrime(i)) {
         System.out.println(i);
       }
